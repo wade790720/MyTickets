@@ -162,6 +162,6 @@ $(function() {
 
 function removeTricket() {
     $(".tricket-tear").remove()
-    appBackground.css("background", "url('/img/BigHero6_Bg.jpg') 0 0 no-repeat")
+    appBackground.removeClass('bg01').addClass('bg02')
     $(".content-wrapper").append(tricketLife)
 }

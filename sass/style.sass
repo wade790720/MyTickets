@@ -21,7 +21,6 @@ html, body
   position: relative
   .background
     +size(100%,100%)
-    background: url('/img/TheSecretLife_Bg.jpg') 0 0 no-repeat
     background-position: 20%;
     background-size: 315%
     -webkit-filter: blur(5px)
@@ -30,9 +29,14 @@ html, body
     -ms-filter: blur(5px)
     filter: blur(15px)
     position: absolute
+    &.bg01
+      background: url('../img/TheSecretLife_Bg.jpg') 0 0 no-repeat
+    &.bg02
+      background: url('../img/BigHero6_Bg.jpg') 0 0 no-repeat
   .iphone
     +size(497px, 880px)
     position: relative
+    transform: scale(0.8)
     box-shadow: 0 3px 10px 5px rgba(0, 0, 0, 0.55)
     .status-bar
       +size(100%, 30px)
@@ -142,10 +146,10 @@ html, body
     .tricket-banner
       +size(100%, 310px)
       &.life
-        background: url("/img/banner01.png") 0 0 no-repeat
+        background: url("../img/banner01.png") 0 0 no-repeat
         background-size: 100%
       &.hero
-        background: url("/img/banner02.png") 0 0 no-repeat
+        background: url("../img/banner02.png") 0 0 no-repeat
         background-size: 100%
     .tricket-data
       +size(100%, auto)
